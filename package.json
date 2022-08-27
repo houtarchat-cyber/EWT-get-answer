@@ -1,8 +1,8 @@
 {
-  "name": "ewt-exam-answers-getter",
-  "version": "0.1.1",
-  "description": "此脚本在 EWT 试题中获取试题答案。",
-  "main": "index.user.ts",
+  "name": "ewt-exam-auto-resolver-and-answers-getter",
+  "version": "0.2.0",
+  "description": "此脚本在 EWT 试题中获取试题答案并自动完成选择题。",
+  "main": "build/index.user.js",
   "scripts": {
     "compile": "tsc"
   },
