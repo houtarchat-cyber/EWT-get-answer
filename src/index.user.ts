@@ -1,6 +1,3 @@
-import {AnalysisData} from './AnalysisData';
-import {PaperData, Question} from './PaperData';
-
 // ==UserScript==
 // @name           升学 E 网通 (EWT360) 试题答案获取 - Beta
 // @name:en        EWT Exam Answers Getter - Beta
@@ -19,7 +16,7 @@ import {PaperData, Question} from './PaperData';
   if (!document.location.hash.includes('exam/answer')) {
     return;
   }
-  const getAnswersByPaperData = async (d: PaperData) => {
+  const getAnswersByPaperData = async (d: Datas.PaperData) => {
     const getAnswerByQuestionId = async (
       questionId: string,
       isChildQuestion?: Boolean
@@ -28,9 +25,9 @@ import {PaperData, Question} from './PaperData';
         `https://web.ewt360.com/customerApi/api/studyprod/web/answer/quesiton/analysis?questionId=${questionId}&` +
           document.location.hash.slice(14)
       );
-      const resJson: AnalysisData = await res.json();
+      const resJson: Datas.AnalysisData = await res.json();
       if (isChildQuestion === true) {
-        return (resJson.data.childQuestions as Question[]).map(
+        return (resJson.data.childQuestions as Datas.Question[]).map(
           (element): string => element.rightAnswer.join()
         );
       }
@@ -73,8 +70,8 @@ import {PaperData, Question} from './PaperData';
     'https://web.ewt360.com/customerApi/api/studyprod/web/answer/paper' +
       document.location.hash.slice(13)
   )
-    .then(async (p): Promise<PaperData> => await p.json())
-    .then((d: PaperData) => {
+    .then(async (p): Promise<Datas.PaperData> => await p.json())
+    .then((d: Datas.PaperData) => {
       getAnswersByPaperData(d)
         .then((answers): void => {
           const answerShower = window.open('', '_blank', 'popup');
