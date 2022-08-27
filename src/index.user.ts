@@ -1,10 +1,10 @@
 // ==UserScript==
-// @name           升学 E 网通 (EWT360) 试题答案获取 - Beta
-// @name:en        EWT Exam Answers Getter - Beta
+// @name           升学 E 网通 (EWT360) 试卷选择题自动完成 + 试题答案获取 - Beta
+// @name:en        EWT Exam Auto Resolver & Answers Getter - Beta
 // @namespace      https://ewt.houtar.eu.org/examanswer2
-// @version        0.1.1
-// @description    此脚本在 EWT 试题中获取试题答案。
-// @description:en This script gets exam answers in EWT exam.
+// @version        0.2.0
+// @description    此脚本在 EWT 试题中获取试题答案并自动完成选择题。
+// @description:en This script gets exam answers and automatically resolve single and multiple choice in EWT exam.
 // @author         Houtar
 // @match          https://web.ewt360.com/mystudy/
 // @icon           https://web.ewt360.com/favicon.ico
@@ -16,23 +16,42 @@
   if (!document.location.hash.includes('exam/answer')) {
     return;
   }
-  const getAnswersByPaperData = async (d: Datas.PaperData) => {
-    const getAnswerByQuestionId = async (
-      questionId: string,
-      isChildQuestion?: Boolean
-    ): Promise<string | string[]> => {
-      const res = await fetch(
-        `https://web.ewt360.com/customerApi/api/studyprod/web/answer/quesiton/analysis?questionId=${questionId}&` +
-          document.location.hash.slice(14)
+  const getAnswerByQuestionId = async (
+    questionId: string,
+    isChildQuestion?: Boolean
+  ): Promise<string | string[]> => {
+    const res = await fetch(
+      `https://web.ewt360.com/customerApi/api/studyprod/web/answer/quesiton/analysis?questionId=${questionId}&` +
+        document.location.hash.slice(14)
+    );
+    const resJson: Datas.AnalysisData = await res.json();
+    if (isChildQuestion === true) {
+      return (resJson.data.childQuestions as Datas.Question[]).map(
+        (element): string => {
+          autoComplete(element.id, element.rightAnswer);
+          return element.rightAnswer.join();
+        }
       );
-      const resJson: Datas.AnalysisData = await res.json();
-      if (isChildQuestion === true) {
-        return (resJson.data.childQuestions as Datas.Question[]).map(
-          (element): string => element.rightAnswer.join()
-        );
-      }
-      return resJson.data.rightAnswer.join();
-    };
+    }
+    autoComplete(resJson.data.id, resJson.data.rightAnswer);
+    return resJson.data.rightAnswer.join();
+  };
+  const autoComplete = (questionId: string, answers: string[]) => {
+    const questionDiv = document.querySelector(
+      `#ewt-question-${questionId} > div > div > ul`
+    );
+    questionDiv
+      ?.querySelectorAll('.selected')
+      .forEach(el => (el as HTMLLIElement).click());
+    answers.forEach(answer => {
+      (
+        questionDiv?.children[
+          ['A', 'B', 'C', 'D'].indexOf(answer)
+        ] as HTMLLIElement
+      )?.click();
+    });
+  };
+  const getAnswersByPaperData = async (d: Datas.PaperData) => {
     let answers = '';
     for (let key = 0; key < d.data.questions.length; key++) {
       const element = d.data.questions[key];
