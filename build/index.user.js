@@ -8,7 +8,6 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
         step((generator = generator.apply(thisArg, _arguments || [])).next());
     });
 };
-Object.defineProperty(exports, "__esModule", { value: true });
 // ==UserScript==
 // @name           升学 E 网通 (EWT360) 试题答案获取 - Beta
 // @name:en        EWT Exam Answers Getter - Beta
@@ -85,4 +84,3 @@ Object.defineProperty(exports, "__esModule", { value: true });
         console.error(e);
     });
 })();
-//# sourceMappingURL=index.user.js.map
