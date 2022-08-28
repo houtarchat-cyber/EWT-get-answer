@@ -6,7 +6,7 @@
 [![GitHub license](https://img.shields.io/github/license/houtarchat-cyber/EWT-get-answer)](https://github.com/houtarchat-cyber/EWT-get-answer/blob/main/LICENSE)
 [![CodeFactor](https://www.codefactor.io/repository/github/houtarchat-cyber/ewt-get-answer/badge)](https://www.codefactor.io/repository/github/houtarchat-cyber/ewt-get-answer)
 [![GitHub stars](https://img.shields.io/github/stars/houtarchat-cyber/EWT-get-answer)](https://github.com/houtarchat-cyber/EWT-get-answer/stargazers)
-[![GitHub forks](https://img.shields.io/github/forks/houtarchat-cyber/EWT-get-answer)](https://github.com/houtarchat-cyber/EWT-get-answer/network)
+[![GitHub forks](https://img.shields.io/github/forks/houtarchat-cyber/EWT-get-answer)](https://github.com/houtarchat-cyber/EWT-get-answer/network/members)
 [![GitHub issues](https://img.shields.io/github/issues/houtarchat-cyber/EWT-get-answer)](https://github.com/houtarchat-cyber/EWT-get-answer/issues)
 
 脚本主页：[https://greasyfork.org/zh-CN/scripts/450155-升学-e-网通-ewt360-试题答案获取-beta](https://greasyfork.org/zh-CN/scripts/450155-%E5%8D%87%E5%AD%A6-e-%E7%BD%91%E9%80%9A-ewt360-%E8%AF%95%E9%A2%98%E7%AD%94%E6%A1%88%E8%8E%B7%E5%8F%96-beta)
