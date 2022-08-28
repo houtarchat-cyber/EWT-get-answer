@@ -21,13 +21,29 @@
 
 > 本程序从未提供品质担保。本代码按原样提供，不提供任何明示或暗示的保证或条件，包括但不限于任何关于所有权、特定用途的适用性、适销性或非侵权性的默示保证或条件。
 
+<details>
+<summary>
+
 ## 用户脚本是什么？
+</summary>
+
 > 用户脚本是一段代码，它们能够优化您的网页浏览体验。安装之后，有些脚本能为网站添加新的功能，有些能使网站的界面更加易用，有些则能隐藏网站上烦人的部分内容。
+</details>
+
+<details open>
+<summary>
 
 ### 第一步：安装一个用户脚本管理器
+</summary>
 要使用用户脚本，您首先需要安装一个用户脚本管理器。您可以根据当前使用的浏览器来选择一个用户脚本管理器。
+</details>
+
+<details>
+<summary>
 
 #### 桌面端
+</summary>
+
  - Chrome：[Tampermonkey](https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo) 或 [Violentmonkey](https://chrome.google.com/webstore/detail/violent-monkey/jinjaccalgkegednnccohejagnlnfdag)
  - Firefox：[Greasemonkey](https://addons.mozilla.org/firefox/addon/greasemonkey/)、[Tampermonkey](https://addons.mozilla.org/firefox/addon/tampermonkey/) 或 [Violentmonkey](https://addons.mozilla.org/firefox/addon/violentmonkey/)
  - Safari：[Tampermonkey](http://tampermonkey.net/?browser=safari) 或 [Userscripts](https://apps.apple.com/app/userscripts/id1463298887)
@@ -35,8 +51,14 @@
  - Opera：[Tampermonkey](https://addons.opera.com/extensions/details/tampermonkey-beta/) 或 [Violentmonkey](https://violentmonkey.github.io/get-it/)
  - Maxthon：[Violentmonkey](http://extension.maxthon.com/detail/index.php?view_id=1680)
  - AdGuard：（不需要其他软件）
+ </details>
+
+<details>
+<summary>
 
 #### 手机端（Android）
+</summary>
+
  - Firefox：[Greasemonkey](https://addons.mozilla.org/firefox/addon/greasemonkey/)、[Tampermonkey](https://addons.mozilla.org/firefox/addon/tampermonkey/) 或 [Violentmonkey](https://addons.mozilla.org/firefox/addon/violentmonkey/)
  - Maxthon：[Violentmonkey](http://extension.maxthon.com/detail/index.php?view_id=1680)
  - Dolphin：[Tampermonkey](https://play.google.com/store/apps/details?id=net.tampermonkey.dolphin)
@@ -45,18 +67,40 @@
  - X浏览器
  - [书签地球](https://www.bookmarkearth.com/download/app)
  - [M浏览器](http://mbrowser.nr19.cn/)
+ </details>
+
+<details>
+<summary>
 
 #### 手机端（iOS）
+</summary>
  - Safari：[Tampermonkey](http://tampermonkey.net/?browser=safari) 或 [Userscripts](https://apps.apple.com/app/userscripts/id1463298887)
  - [Gear](https://gear4.app/)：（不需要其他软件）
+ </details>
+
+<details open>
+<summary>
 
 ### 第二步：安装此用户脚本
+</summary>
+
 脚本主页：[![https://greasyfork.org/zh-CN/scripts/450155-升学-e-网通-ewt360-试题答案获取-beta](https://greasyfork.org/packs/media/images/blacklogo96-b2384000fca45aa17e45eb417cbcbb59.png) 转到 Greasy Fork 安装!](https://greasyfork.org/zh-CN/scripts/450155-%E5%8D%87%E5%AD%A6-e-%E7%BD%91%E9%80%9A-ewt360-%E8%AF%95%E9%A2%98%E7%AD%94%E6%A1%88%E8%8E%B7%E5%8F%96-beta)
+</details>
+
+<details open>
+<summary>
 
 ### 第三步：使用用户脚本
+</summary>
+
 现在您可以访问这个用户脚本所针对的网站，脚本应该已经自动启动和生效。
+</details>
+
+<details>
+<summary>
 
 ## 声明
+</summary>
 
 本程序基于脚本[“升学 E 网通 (EWT360) 试题分析获取 - Beta”](https://greasyfork.org/zh-CN/scripts/448799-%E5%8D%87%E5%AD%A6-e-%E7%BD%91%E9%80%9A-ewt360-%E8%AF%95%E9%A2%98%E5%88%86%E6%9E%90%E8%8E%B7%E5%8F%96-beta)，参考使用了“EWT选择答案获取 V1.3”中的API。
 
@@ -77,3 +121,4 @@
 该程序作者的电子邮件地址：[houtarchaat@gmail.com](mailto:houtarchaat@gmail.com)
 
 Houtar，2022 年 8 月 25 日
+</details>
