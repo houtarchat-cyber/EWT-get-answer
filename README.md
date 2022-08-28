@@ -36,7 +36,6 @@
 ### 第一步：安装一个用户脚本管理器
 </summary>
 要使用用户脚本，您首先需要安装一个用户脚本管理器。您可以根据当前使用的浏览器来选择一个用户脚本管理器。
-</details>
 
 <details>
 <summary>
@@ -77,6 +76,7 @@
  - Safari：[Tampermonkey](http://tampermonkey.net/?browser=safari) 或 [Userscripts](https://apps.apple.com/app/userscripts/id1463298887)
  - [Gear](https://gear4.app/)：（不需要其他软件）
  </details>
+</details>
 
 <details open>
 <summary>
