@@ -73,6 +73,7 @@
 
 #### 手机端（iOS）
 </summary>
+
  - Safari：[Tampermonkey](http://tampermonkey.net/?browser=safari) 或 [Userscripts](https://apps.apple.com/app/userscripts/id1463298887)
  - [Gear](https://gear4.app/)：（不需要其他软件）
  </details>
