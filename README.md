@@ -4,6 +4,7 @@
 [![EWT Killer](https://img.shields.io/github/v/release/houtarchat-cyber/EWT-get-answer?color=5d89d2&label=EWT%20Killer)](https://github.com/houtarchat-cyber/EWT-get-answer/releases/latest)
 [![Published at](https://img.shields.io/github/release-date/houtarchat-cyber/EWT-get-answer?color=5d89d2&label=Published%20at)](https://github.com/houtarchat-cyber/EWT-get-answer/releases/latest)
 [![GitHub license](https://img.shields.io/github/license/houtarchat-cyber/EWT-get-answer)](https://github.com/houtarchat-cyber/EWT-get-answer/blob/main/LICENSE)
+[![CodeQL](https://github.com/houtarchat-cyber/EWT-get-answer/actions/workflows/codeql-analysis.yml/badge.svg)](https://github.com/houtarchat-cyber/EWT-get-answer/actions/workflows/codeql-analysis.yml)
 [![CodeFactor](https://www.codefactor.io/repository/github/houtarchat-cyber/ewt-get-answer/badge)](https://www.codefactor.io/repository/github/houtarchat-cyber/ewt-get-answer)
 [![GitHub stars](https://img.shields.io/github/stars/houtarchat-cyber/EWT-get-answer)](https://github.com/houtarchat-cyber/EWT-get-answer/stargazers)
 [![GitHub forks](https://img.shields.io/github/forks/houtarchat-cyber/EWT-get-answer)](https://github.com/houtarchat-cyber/EWT-get-answer/network/members)
