@@ -4,20 +4,48 @@
     "plugin:node/recommended",
     "prettier"
   ],
+  "overrides": [
+    {
+      "extends": [
+        "plugin:@typescript-eslint/recommended"
+      ],
+      "files": [
+        "**/*.ts",
+        "**/*.tsx"
+      ],
+      "parser": "@typescript-eslint/parser",
+      "parserOptions": {
+        "ecmaVersion": 2018,
+        "sourceType": "module"
+      },
+      "rules": {
+        "@typescript-eslint/ban-types": "off",
+        "@typescript-eslint/camelcase": "off",
+        "@typescript-eslint/explicit-function-return-type": "off",
+        "@typescript-eslint/explicit-module-boundary-types": "off",
+        "@typescript-eslint/no-empty-function": "off",
+        "@typescript-eslint/no-non-null-assertion": "off",
+        "@typescript-eslint/no-use-before-define": "off",
+        "@typescript-eslint/no-var-requires": "off",
+        "@typescript-eslint/no-warning-comments": "off",
+        "no-dupe-class-members": "off",
+        "node/no-empty-function": "off",
+        "node/no-missing-import": "off",
+        "node/no-missing-require": "off",
+        "node/no-unsupported-features/es-syntax": "off",
+        "node/shebang": "off",
+        "require-atomic-updates": "off"
+      }
+    }
+  ],
   "plugins": [
     "node",
     "prettier"
   ],
   "rules": {
-    "prettier/prettier": "error",
     "block-scoped-var": "error",
-    "eqeqeq": "error",
-    "no-var": "error",
-    "prefer-const": "error",
     "eol-last": "error",
-    "prefer-arrow-callback": "error",
-    "no-trailing-spaces": "error",
-    "quotes": ["warn", "single", { "avoidEscape": true }],
+    "eqeqeq": "error",
     "no-restricted-properties": [
       "error",
       {
@@ -28,37 +56,18 @@
         "object": "it",
         "property": "only"
       }
-    ]
-  },
-  "overrides": [
-    {
-      "files": ["**/*.ts", "**/*.tsx"],
-      "parser": "@typescript-eslint/parser",
-      "extends": [
-        "plugin:@typescript-eslint/recommended"
-      ],
-      "rules": {
-        "@typescript-eslint/no-non-null-assertion": "off",
-        "@typescript-eslint/no-use-before-define": "off",
-        "@typescript-eslint/no-warning-comments": "off",
-        "@typescript-eslint/no-empty-function": "off",
-        "@typescript-eslint/no-var-requires": "off",
-        "@typescript-eslint/explicit-function-return-type": "off",
-        "@typescript-eslint/explicit-module-boundary-types": "off",
-        "@typescript-eslint/ban-types": "off",
-        "@typescript-eslint/camelcase": "off",
-        "node/no-missing-import": "off",
-        "node/no-empty-function": "off",
-        "node/no-unsupported-features/es-syntax": "off",
-        "node/no-missing-require": "off",
-        "node/shebang": "off",
-        "no-dupe-class-members": "off",
-        "require-atomic-updates": "off"
-      },
-      "parserOptions": {
-        "ecmaVersion": 2018,
-        "sourceType": "module"
+    ],
+    "no-trailing-spaces": "error",
+    "no-var": "error",
+    "prefer-arrow-callback": "error",
+    "prefer-const": "error",
+    "prettier/prettier": "error",
+    "quotes": [
+      "warn",
+      "single",
+      {
+        "avoidEscape": true
       }
-    }
-  ]
+    ]
+  }
 }

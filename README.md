@@ -45,11 +45,16 @@
 </summary>
 
  - Chrome：[Tampermonkey](https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo) 或 [Violentmonkey](https://chrome.google.com/webstore/detail/violent-monkey/jinjaccalgkegednnccohejagnlnfdag)
- - Firefox：[Greasemonkey](https://addons.mozilla.org/firefox/addon/greasemonkey/)、[Tampermonkey](https://addons.mozilla.org/firefox/addon/tampermonkey/) 或 [Violentmonkey](https://addons.mozilla.org/firefox/addon/violentmonkey/)
- - Safari：[Tampermonkey](http://tampermonkey.net/?browser=safari) 或 [Userscripts](https://apps.apple.com/app/userscripts/id1463298887)
- - Microsoft Edge：[Tampermonkey](https://microsoftedge.microsoft.com/addons/detail/tampermonkey/iikmkjmpaadaobahmlepeloendndfphd)
- - Opera：[Tampermonkey](https://addons.opera.com/extensions/details/tampermonkey-beta/) 或 [Violentmonkey](https://violentmonkey.github.io/get-it/)
- - Maxthon：[Violentmonkey](http://extension.maxthon.com/detail/index.php?view_id=1680)
+ - Firefox：[Greasemonkey](https://addons.mozilla.org/firefox/addon/greasemonkey/)
+   、[Tampermonkey](https://addons.mozilla.org/firefox/addon/tampermonkey/)
+   或 [Violentmonkey](https://addons.mozilla.org/firefox/addon/violentmonkey/)
+ - Safari：[Tampermonkey](https://www.tampermonkey.net/?browser=safari)
+   或 [Userscripts](https://apps.apple.com/app/userscripts/id1463298887)
+ - Microsoft
+   Edge：[Tampermonkey](https://microsoftedge.microsoft.com/addons/detail/tampermonkey/iikmkjmpaadaobahmlepeloendndfphd)
+ - Opera：[Tampermonkey](https://addons.opera.com/extensions/details/tampermonkey-beta/)
+   或 [Violentmonkey](https://violentmonkey.github.io/get-it/)
+ - Maxthon：[Violentmonkey](https://extension.maxthon.com/detail/index.php?view_id=1680)
  - AdGuard：（不需要其他软件）
  </details>
 
@@ -59,14 +64,16 @@
 #### 手机端（Android）
 </summary>
 
- - Firefox：[Greasemonkey](https://addons.mozilla.org/firefox/addon/greasemonkey/)、[Tampermonkey](https://addons.mozilla.org/firefox/addon/tampermonkey/) 或 [Violentmonkey](https://addons.mozilla.org/firefox/addon/violentmonkey/)
- - Maxthon：[Violentmonkey](http://extension.maxthon.com/detail/index.php?view_id=1680)
- - Dolphin：[Tampermonkey](https://play.google.com/store/apps/details?id=net.tampermonkey.dolphin)
+- Firefox：[Greasemonkey](https://addons.mozilla.org/firefox/addon/greasemonkey/)
+  、[Tampermonkey](https://addons.mozilla.org/firefox/addon/tampermonkey/)
+  或 [Violentmonkey](https://addons.mozilla.org/firefox/addon/violentmonkey/)
+- Maxthon：[Violentmonkey](https://extension.maxthon.com/detail/index.php?view_id=1680)
+- Dolphin：[Tampermonkey](https://play.google.com/store/apps/details?id=net.tampermonkey.dolphin)
  - UC：[Tampermonkey](https://www.tampermonkey.net/?browser=ucweb&ext=dhdg)
  - Kiwi：[Tampermonkey](https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo) 或 [Violentmonkey](https://chrome.google.com/webstore/detail/violent-monkey/jinjaccalgkegednnccohejagnlnfdag)
  - X浏览器
- - [书签地球](https://www.bookmarkearth.com/download/app)
- - [M浏览器](http://mbrowser.nr19.cn/)
+- [书签地球](https://www.bookmarkearth.com/download/app)
+- [M浏览器](https://www.coolapk.com/apk/252747)
  </details>
 
 <details>
@@ -75,8 +82,9 @@
 #### 手机端（iOS）
 </summary>
 
- - Safari：[Tampermonkey](http://tampermonkey.net/?browser=safari) 或 [Userscripts](https://apps.apple.com/app/userscripts/id1463298887)
- - [Gear](https://gear4.app/)：（不需要其他软件）
+- Safari：[Tampermonkey](https://www.tampermonkey.net/?browser=safari)
+  或 [Userscripts](https://apps.apple.com/app/userscripts/id1463298887)
+- [Gear](https://gear4.app/)：（不需要其他软件）
  </details>
 </details>
 

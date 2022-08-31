@@ -27,25 +27,27 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
         return;
     }
     const getAnswerByQuestionId = (questionId, isChildQuestion) => __awaiter(void 0, void 0, void 0, function* () {
-        const res = yield fetch(`https://web.ewt360.com/customerApi/api/studyprod/web/answer/quesiton/analysis?questionId=${questionId}&` +
-            document.location.hash.slice(14));
-        const resJson = yield res.json();
-        if (isChildQuestion === true) {
-            return resJson.data.childQuestions.map((element) => {
-                autoComplete(element.id, element.rightAnswer);
-                return element.rightAnswer.join();
-            });
-        }
-        autoComplete(resJson.data.id, resJson.data.rightAnswer);
-        return resJson.data.rightAnswer.join();
+      const resJson = yield (yield fetch(`https://web.ewt360.com/customerApi/api/studyprod/web/answer/quesiton/analysis?questionId=${questionId}&` +
+        document.location.hash.slice(14))).json();
+      const { rightAnswer, childQuestions, id } = resJson.data;
+      if (isChildQuestion === true) {
+        return childQuestions.map((element) => {
+          autoComplete(element.id, element.rightAnswer);
+          return element.rightAnswer.join();
+        });
+      }
+      autoComplete(id, rightAnswer);
+      return rightAnswer.join();
     });
     const autoComplete = (questionId, answers) => {
-        const questionDiv = document.querySelector(`#ewt-question-${questionId} > div > div > ul`);
-        questionDiv === null || questionDiv === void 0 ? void 0 : questionDiv.querySelectorAll('.selected').forEach(el => el.click());
-        answers.forEach(answer => {
-            var _a;
-            (_a = questionDiv === null || questionDiv === void 0 ? void 0 : questionDiv.children[['A', 'B', 'C', 'D'].indexOf(answer)]) === null || _a === void 0 ? void 0 : _a.click();
-        });
+      const questionDiv = document.querySelector(`#ewt-question-${questionId} > div > div > ul`);
+      questionDiv === null || questionDiv === void 0 ? void 0 : questionDiv.querySelectorAll(".selected").forEach(el => {
+        el.click();
+      });
+      answers.forEach(answer => {
+        var _a;
+        (_a = questionDiv === null || questionDiv === void 0 ? void 0 : questionDiv.children[["A", "B", "C", "D"].indexOf(answer)]) === null || _a === void 0 ? void 0 : _a.click();
+      });
     };
     const getAnswersByPaperData = (d) => __awaiter(void 0, void 0, void 0, function* () {
         let answers = '';
@@ -54,29 +56,36 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
             const questionNum = key + 1;
             const childQuestions = element.childQuestions;
             if (childQuestions.length === 0) {
-                let answer = yield getAnswerByQuestionId(element.id);
-                answer = answer === '' ? element.analyse : answer;
-                answers += `<h4>${questionNum}: ${answer}</h4>`;
+              let answer = (yield getAnswerByQuestionId(element.id));
+              if (answer === "") {
+                answer = element.analyse;
+              }
+              answers += `<h4>${questionNum}: ${answer}</h4>`;
             }
             else {
-                const childQuestionAnswers = yield getAnswerByQuestionId(element.id, true);
+              const childQuestionAnswers = (yield getAnswerByQuestionId(element.id, true));
                 for (let childQuestionKey = 0; childQuestionKey < childQuestions.length; childQuestionKey++) {
-                    const childQuestion = childQuestions[childQuestionKey];
-                    const childQuestionNum = childQuestionKey + 1;
-                    const childQuestionAnswer = childQuestionAnswers[childQuestionKey] === ''
-                        ? childQuestion.analyse
-                        : childQuestionAnswers[childQuestionKey];
-                    answers +=
-                        `<h4>${questionNum}. (${childQuestionNum})` +
-                            ` : ${childQuestionAnswer}</h4>`;
+                  const childQuestion = childQuestions[childQuestionKey];
+                  const childQuestionNum = childQuestionKey + 1;
+                  let childQuestionAnswer;
+                  if (childQuestionAnswers[childQuestionKey] === "") {
+                    childQuestionAnswer = childQuestion.analyse;
+                  } else {
+                    childQuestionAnswer = childQuestionAnswers[childQuestionKey];
+                  }
+                  answers +=
+                    `<h4>${questionNum}. (${childQuestionNum})` +
+                    ` : ${childQuestionAnswer}</h4>`;
                 }
             }
         }
         return answers;
     });
-    fetch('https://web.ewt360.com/customerApi/api/studyprod/web/answer/paper' +
-        document.location.hash.slice(13))
-        .then((p) => __awaiter(void 0, void 0, void 0, function* () { return yield p.json(); }))
+  fetch("https://web.ewt360.com/customerApi/api/studyprod/web/answer/paper" +
+    document.location.hash.slice(13))
+    .then((p) => __awaiter(void 0, void 0, void 0, function* () {
+      return yield p.json();
+    }))
         .then((d) => {
         getAnswersByPaperData(d)
             .then((answers) => {

@@ -97,16 +97,9 @@ declare namespace Datas {
     subjective: boolean;
   }
 
-  export enum CateName {
-    单选 = '单选',
-    填空 = '填空',
-    解答 = '解答',
-  }
+  export enum CateName {}
 
-  export enum DegreeRangeDesc {
-    Empty = '',
-    易 = '易',
-  }
+  export enum DegreeRangeDesc {}
 
   export interface Knowledge {
     id: string;

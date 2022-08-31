@@ -16,33 +16,36 @@
   if (!document.location.hash.includes('exam/answer')) {
     return;
   }
-  const getAnswerByQuestionId = async (
+  const getAnswerByQuestionId: (
     questionId: string,
-    isChildQuestion?: Boolean
-  ): Promise<string | string[]> => {
-    const res = await fetch(
-      `https://web.ewt360.com/customerApi/api/studyprod/web/answer/quesiton/analysis?questionId=${questionId}&` +
-        document.location.hash.slice(14)
-    );
-    const resJson: Datas.AnalysisData = await res.json();
+    isChildQuestion?: boolean
+  ) => Promise<string | string[]> = async (questionId, isChildQuestion) => {
+    const resJson: Datas.AnalysisData = await (
+      await fetch(
+        `https://web.ewt360.com/customerApi/api/studyprod/web/answer/quesiton/analysis?questionId=${questionId}&` +
+          document.location.hash.slice(14)
+      )
+    ).json();
+    const {rightAnswer, childQuestions, id} = resJson.data;
     if (isChildQuestion === true) {
-      return (resJson.data.childQuestions as Datas.Question[]).map(
-        (element): string => {
-          autoComplete(element.id, element.rightAnswer);
-          return element.rightAnswer.join();
-        }
-      );
+      return (childQuestions as Datas.Question[]).map((element): string => {
+        autoComplete(element.id, element.rightAnswer);
+        return element.rightAnswer.join();
+      });
     }
-    autoComplete(resJson.data.id, resJson.data.rightAnswer);
-    return resJson.data.rightAnswer.join();
+    autoComplete(id, rightAnswer);
+    return rightAnswer.join();
   };
-  const autoComplete = (questionId: string, answers: string[]) => {
-    const questionDiv = document.querySelector(
+  const autoComplete: (questionId: string, answers: string[]) => void = (
+    questionId,
+    answers
+  ) => {
+    const questionDiv: HTMLUListElement | null = document.querySelector(
       `#ewt-question-${questionId} > div > div > ul`
     );
-    questionDiv
-      ?.querySelectorAll('.selected')
-      .forEach(el => (el as HTMLLIElement).click());
+    questionDiv?.querySelectorAll('.selected').forEach(el => {
+      (el as HTMLLIElement).click();
+    });
     answers.forEach(answer => {
       (
         questionDiv?.children[
@@ -51,32 +54,41 @@
       )?.click();
     });
   };
-  const getAnswersByPaperData = async (d: Datas.PaperData) => {
+  const getAnswersByPaperData: (d: Datas.PaperData) => Promise<string> = async (
+    d: Datas.PaperData
+  ) => {
     let answers = '';
     for (let key = 0; key < d.data.questions.length; key++) {
-      const element = d.data.questions[key];
-      const questionNum = key + 1;
-      const childQuestions = element.childQuestions;
+      const element: Datas.Question = d.data.questions[key];
+      const questionNum: number = key + 1;
+      const childQuestions: Datas.Question[] = element.childQuestions;
       if (childQuestions.length === 0) {
-        let answer = await getAnswerByQuestionId(element.id);
-        answer = answer === '' ? element.analyse : answer;
+        let answer: string = (await getAnswerByQuestionId(
+          element.id
+        )) as string;
+        if (answer === '') {
+          answer = element.analyse;
+        }
         answers += `<h4>${questionNum}: ${answer}</h4>`;
       } else {
-        const childQuestionAnswers = await getAnswerByQuestionId(
+        const childQuestionAnswers: string[] = (await getAnswerByQuestionId(
           element.id,
           true
-        );
+        )) as string[];
         for (
           let childQuestionKey = 0;
           childQuestionKey < childQuestions.length;
           childQuestionKey++
         ) {
-          const childQuestion = childQuestions[childQuestionKey];
-          const childQuestionNum = childQuestionKey + 1;
-          const childQuestionAnswer =
-            childQuestionAnswers[childQuestionKey] === ''
-              ? childQuestion.analyse
-              : childQuestionAnswers[childQuestionKey];
+          const childQuestion: Datas.Question =
+            childQuestions[childQuestionKey];
+          const childQuestionNum: number = childQuestionKey + 1;
+          let childQuestionAnswer: string;
+          if (childQuestionAnswers[childQuestionKey] === '') {
+            childQuestionAnswer = childQuestion.analyse;
+          } else {
+            childQuestionAnswer = childQuestionAnswers[childQuestionKey];
+          }
           answers +=
             `<h4>${questionNum}. (${childQuestionNum})` +
             ` : ${childQuestionAnswer}</h4>`;
@@ -89,11 +101,17 @@
     'https://web.ewt360.com/customerApi/api/studyprod/web/answer/paper' +
       document.location.hash.slice(13)
   )
-    .then(async (p): Promise<Datas.PaperData> => await p.json())
+    .then(async (p: Response): Promise<Datas.PaperData> => {
+      return await p.json();
+    })
     .then((d: Datas.PaperData) => {
       getAnswersByPaperData(d)
-        .then((answers): void => {
-          const answerShower = window.open('', '_blank', 'popup');
+        .then((answers: string): void => {
+          const answerShower: Window | null = window.open(
+            '',
+            '_blank',
+            'popup'
+          );
           if (answerShower !== null) {
             answerShower.document.body.innerHTML = answers;
           } else {
@@ -102,11 +120,11 @@
             );
           }
         })
-        .catch((e): void => {
+        .catch((e: Error): void => {
           console.error(e);
         });
     })
-    .catch((e): void => {
+    .catch((e: Error): void => {
       console.error(e);
     });
 })();

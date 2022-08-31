@@ -12,18 +12,17 @@
     "noEmitOnError": true,
     "noFallthroughCasesInSwitch": true,
     "noImplicitReturns": true,
+    "outDir": "build",
     "pretty": true,
+    "rootDir": "./src",
     "sourceMap": false,
     "strict": true,
-    "target": "ES2016",
-    "rootDir": "./src",
-    "outDir": "build",
+    "target": "ES2016"
   },
-  "include": [
-    "**/*.ts",
-    "**/*.ts"
-  ],
   "exclude": [
     "node_modules"
+  ],
+  "include": [
+    "**/*.ts"
   ]
 }
