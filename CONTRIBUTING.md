@@ -29,33 +29,44 @@
 
 #### 在 UI 中进行更改
 
-单击任何文档页面底部的**做出贡献**以进行小的更改，例如拼写错误、句子修复或损坏的链接。这会将您带到 `.md` 文件，您可以在其中进行更改并[创建拉取请求](#pull-request)进行审核。
+单击任何文档页面底部的**做出贡献**以进行小的更改，例如拼写错误、句子修复或损坏的链接。这会将您带到 `.md`
+文件，您可以在其中进行更改并[创建拉取请求](https://github.com/houtarchat-cyber/EWT-get-answer/pulls)进行审核。
 
 #### 在代码空间中进行更改
 
-有关使用代码空间处理 GitHub 文档的更多信息，请参阅“[在代码空间中工作](https://github.com/github/docs/blob/main/contributing/codespace.md)”。
+有关使用代码空间处理 GitHub
+文档的更多信息，请参阅“[在代码空间中工作](https://github.com/github/docs/blob/main/contributing/codespace.md)”。
 
 #### 在本地进行更改
 
-1. [安装 Git LFS](https://docs.github.com/en/github/managing-large-files/versioning-large-files/installing-git-large-file-storage)。
+1. [安装 Git LFS](https://docs.github.com/en/github/managing-large-files/versioning-large-files/installing-git-large-file-storage)
+   。
 
-2. Fork 存储库。
-- 使用 GitHub 桌面：
-  - [GitHub Desktop 入门](https://docs.github.com/en/desktop/installing-and-configuring-github-desktop/getting-started-with-github-desktop)将指导您设置 Desktop .
-  - 设置 Desktop 后，您可以使用它来 [fork repo](https://docs.github.com/en/desktop/contributing-and-collaborating-using-github-desktop/cloning-and-forking-repositories-from-github-desktop)！
-
-- 使用命令行：
-  - [Fork the repo](https://docs.github.com/en/github/getting-started-with-github/fork-a-repo#fork-an-example-repository)以便您进行更改在您准备好合并它们之前，不会影响原始项目。
+2. Fork 存储库（详细内容请参阅下文『Fork 存储库』）。
 
 3. 创建一个工作分支并从您的更改开始！
 
+##### Fork 存储库
+
+- 使用 GitHub 桌面：
+  - [GitHub Desktop 入门](https://docs.github.com/en/desktop/installing-and-configuring-github-desktop/getting-started-with-github-desktop)
+    将指导您设置 Desktop .
+  - 设置 Desktop
+    后，您可以使用它来 [fork repo](https://docs.github.com/en/desktop/contributing-and-collaborating-using-github-desktop/cloning-and-forking-repositories-from-github-desktop)
+    ！
+- 使用命令行：
+  - [Fork the repo](https://docs.github.com/en/github/getting-started-with-github/fork-a-repo#fork-an-example-repository)
+    以便您进行更改在您准备好合并它们之前，不会影响原始项目。
+
 ### 提交更新
 
-对更改感到满意后提交更改。请参阅 [Atom 的贡献指南](https://github.com/atom/atom/blob/master/CONTRIBUTING.md#git-commit-messages)了解如何使用表情符号来提交消息。
+对更改感到满意后提交更改。请参阅 [Atom 的贡献指南](https://github.com/atom/atom/blob/master/CONTRIBUTING.md#git-commit-messages)
+了解如何使用表情符号来提交消息。
 
 ### 拉取请求
 
 完成更改后，创建一个拉取请求，也称为 PR。
+
 - 填写“Ready for review”模板，以便我们审核您的 PR。此模板可帮助审阅者了解您的更改以及拉取请求的目的。
 - 不要忘记[将 PR 链接到问题](https://docs.github.com/en/issues/tracking-your-work-with-issues/linking-a-pull-request-to-an-issue)如果你正在解决一个问题。
 - 启用复选框以[允许维护者编辑](https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests/allowing-changes-to-a-pull-request-branch-created-from-a-fork)，因此可以更新分支以进行合并。

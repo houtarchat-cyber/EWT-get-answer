@@ -1,9 +1,8 @@
-# Security Policy
+# 安全策略
 
-## Supported Versions
+## 支持的版本
 
-These versions of this project are
-currently being supported with security updates.
+此项目的这些版本当前受安全更新支持。
 
 | Version | Supported          |
 |---------|--------------------|
@@ -11,21 +10,23 @@ currently being supported with security updates.
 | 0.1.1   | :white_check_mark: |
 | 0.1.0   | :x:                |
 
-## Reporting a Vulnerability
+## 报告漏洞
 
-How to report a vulnerability.
+如何报告漏洞：
 
-Where to go:
- - Issues
- - Discussions
- - Greasy Fork Feedback (https://greasyfork.org/zh-CN/scripts/450155-%E5%8D%87%E5%AD%A6-e-%E7%BD%91%E9%80%9A-ewt360-%E8%AF%95%E9%A2%98%E7%AD%94%E6%A1%88%E8%8E%B7%E5%8F%96-beta/feedback#post-discussion)
+- Issues
+- Discussions
+- Greasy Fork
+  反馈 (https://greasyfork.org/zh-CN/scripts/450155-%E5%8D%87%E5%AD%A6-e-%E7%BD%91%E9%80%9A-ewt360-%E8%AF%95%E9%A2%98%E7%AD%94%E6%A1%88%E8%8E%B7%E5%8F%96-beta/feedback#post-discussion)
 
-How often you can expect to get an update on a reported vulnerability:
- - Within two weeks (or longer).
+有关已报告漏洞的更新的频率：
 
-What to expect if the vulnerability is:
- - Accepted:
- - - The program may be updated within two weeks.
- - Declined:
- - - The program may not be updated by main developer team.
- - - You can still contribute by Pull requests.
+- 两周内（或更长）。
+
+如果该漏洞被：
+
+- 接受:
+   - 程序可能会在两周内更新。
+- 拒绝:
+   - 主要开发团队可能不会更新该程序。
+   - 您仍然可以通过 PR 做出贡献。
