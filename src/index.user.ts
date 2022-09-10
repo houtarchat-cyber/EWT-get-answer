@@ -1,8 +1,8 @@
 // ==UserScript==
-// @name           升学 E 网通 (EWT360) 试卷选择题自动完成 + 试题答案获取 - Beta
-// @name:en        EWT Exam Auto Resolver & Answers Getter - Beta
+// @name           升学 E 网通 (EWT360) 试卷选择题自动完成 + 试题答案获取
+// @name:en        EWT Exam Auto Resolver & Answers Getter
 // @namespace      https://ewt.houtar.eu.org/examanswer2
-// @version        0.2.0
+// @version        1.0.0
 // @description    此脚本在 EWT 试题中获取试题答案并自动完成选择题。
 // @description:en This script gets exam answers and automatically resolve single and multiple choice in EWT exam.
 // @author         Houtar

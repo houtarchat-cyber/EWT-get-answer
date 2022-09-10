@@ -1,4 +1,4 @@
-# 升学 E 网通 (EWT360) 试题答案获取 - Beta
+# 升学 E 网通 (EWT360) 试题答案获取
 此脚本在 EWT 试题中获取试题答案并自动完成选择题。
 
 [![EWT Killer](https://img.shields.io/github/v/release/houtarchat-cyber/EWT-get-answer?color=5d89d2&label=EWT%20Killer)](https://github.com/houtarchat-cyber/EWT-get-answer/releases/latest)
@@ -10,7 +10,7 @@
 [![GitHub forks](https://img.shields.io/github/forks/houtarchat-cyber/EWT-get-answer)](https://github.com/houtarchat-cyber/EWT-get-answer/network/members)
 [![GitHub issues](https://img.shields.io/github/issues/houtarchat-cyber/EWT-get-answer)](https://github.com/houtarchat-cyber/EWT-get-answer/issues)
 
-脚本主页：[https://greasyfork.org/zh-CN/scripts/450155-升学-e-网通-ewt360-试题答案获取-beta](https://greasyfork.org/zh-CN/scripts/450155-%E5%8D%87%E5%AD%A6-e-%E7%BD%91%E9%80%9A-ewt360-%E8%AF%95%E9%A2%98%E7%AD%94%E6%A1%88%E8%8E%B7%E5%8F%96-beta)
+脚本主页：[https://greasyfork.org/zh-CN/scripts/450155-升学-e-网通-ewt360-试题答案获取](https://greasyfork.org/zh-CN/scripts/450155-%E5%8D%87%E5%AD%A6-e-%E7%BD%91%E9%80%9A-ewt360-%E8%AF%95%E9%A2%98%E7%AD%94%E6%A1%88%E8%8E%B7%E5%8F%96)
 
 ![Repository Image](https://repository-images.githubusercontent.com/529219578/34135101-3012-44ee-bf33-06e07ad36fd0)
 
@@ -101,7 +101,7 @@
 ### 第二步：安装此用户脚本
 </summary>
 
-脚本主页：[![https://greasyfork.org/zh-CN/scripts/450155-升学-e-网通-ewt360-试题答案获取-beta](https://greasyfork.org/packs/media/images/blacklogo96-b2384000fca45aa17e45eb417cbcbb59.png) 转到 Greasy Fork 安装!](https://greasyfork.org/zh-CN/scripts/450155-%E5%8D%87%E5%AD%A6-e-%E7%BD%91%E9%80%9A-ewt360-%E8%AF%95%E9%A2%98%E7%AD%94%E6%A1%88%E8%8E%B7%E5%8F%96-beta)
+脚本主页：[![https://greasyfork.org/zh-CN/scripts/450155-升学-e-网通-ewt360-试题答案获取](https://greasyfork.org/packs/media/images/blacklogo96-b2384000fca45aa17e45eb417cbcbb59.png) 转到 Greasy Fork 安装!](https://greasyfork.org/zh-CN/scripts/450155-%E5%8D%87%E5%AD%A6-e-%E7%BD%91%E9%80%9A-ewt360-%E8%AF%95%E9%A2%98%E7%AD%94%E6%A1%88%E8%8E%B7%E5%8F%96)
 </details>
 
 <details open>
@@ -119,7 +119,7 @@
 ## 声明
 </summary>
 
-本程序基于脚本[“升学 E 网通 (EWT360) 试题分析获取 - Beta”](https://greasyfork.org/zh-CN/scripts/448799-%E5%8D%87%E5%AD%A6-e-%E7%BD%91%E9%80%9A-ewt360-%E8%AF%95%E9%A2%98%E5%88%86%E6%9E%90%E8%8E%B7%E5%8F%96-beta)，参考使用了“EWT选择答案获取 V1.3”中的API。
+本程序基于脚本[“升学 E 网通 (EWT360) 试题分析获取 - Beta”](https://greasyfork.org/zh-CN/scripts/448799-%E5%8D%87%E5%AD%A6-e-%E7%BD%91%E9%80%9A-ewt360-%E8%AF%95%E9%A2%98%E5%88%86%E6%9E%90%E8%8E%B7%E5%8F%96)，参考使用了“EWT选择答案获取 V1.3”中的API。
 
 本程序仅供学习交流之用，不得用于商业或其他非法用途。
 

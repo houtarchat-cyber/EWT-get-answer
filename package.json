@@ -7,13 +7,13 @@
   "devDependencies": {
     "@types/node": "^18.7.15",
     "@typescript-eslint/eslint-plugin": "^5.35.1",
-    "eslint": "8.23.0",
+    "eslint": "^8.23.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-prettier": "^4.2.1",
     "typescript": "^4.0.3"
   },
-  "homepage": "https://greasyfork.org/zh-CN/scripts/450155-%E5%8D%87%E5%AD%A6-e-%E7%BD%91%E9%80%9A-ewt360-%E8%AF%95%E9%A2%98%E7%AD%94%E6%A1%88%E8%8E%B7%E5%8F%96-beta",
+  "homepage": "https://greasyfork.org/zh-CN/scripts/450155-%E5%8D%87%E5%AD%A6-e-%E7%BD%91%E9%80%9A-ewt360-%E8%AF%95%E9%A2%98%E7%AD%94%E6%A1%88%E8%8E%B7%E5%8F%96",
   "license": "GPL-3.0",
   "main": "build/index.user.js",
   "name": "ewt-exam-auto-resolver-and-answers-getter",
@@ -21,5 +21,5 @@
   "scripts": {
     "compile": "tsc"
   },
-  "version": "0.2.0"
+  "version": "1.0.0"
 }
