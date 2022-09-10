@@ -19,7 +19,7 @@
 
 #### 创建一个新问题
 
-如果您发现文档有问题，[搜索是否存在问题](https://docs.github.com/en/github/searching-for-information-on-github/searching-on-github/searching-issues-and-pull-requests#search-by-the-title-body-or-comments)。如果相关问题不存在，您可以使用相关的[问题表单](https://github.com/houtarchat-cyber/EWT-get-answer/issues/new/choose)打开一个新问题。
+如果您发现程序有问题，[搜索是否存在问题](https://docs.github.com/en/github/searching-for-information-on-github/searching-on-github/searching-issues-and-pull-requests#search-by-the-title-body-or-comments)。如果相关问题不存在，您可以使用相关的[问题表单](https://github.com/houtarchat-cyber/EWT-get-answer/issues/new/choose)打开一个新问题。
 
 #### 解决问题
 
@@ -29,13 +29,11 @@
 
 #### 在 UI 中进行更改
 
-单击任何文档页面底部的**做出贡献**以进行小的更改，例如拼写错误、句子修复或损坏的链接。这会将您带到 `.md`
-文件，您可以在其中进行更改并[创建拉取请求](https://github.com/houtarchat-cyber/EWT-get-answer/pulls)进行审核。
+单击任何文件页面中的 **Edit this file** 以进行小的更改，您可以在其中进行更改并[创建拉取请求](https://github.com/houtarchat-cyber/EWT-get-answer/pulls)进行审核。
 
 #### 在代码空间中进行更改
 
-有关使用代码空间处理 GitHub
-文档的更多信息，请参阅“[在代码空间中工作](https://github.com/github/docs/blob/main/contributing/codespace.md)”。
+有关使用代码空间处理的更多信息，请参阅“[在代码空间中工作](https://github.com/github/docs/blob/main/contributing/codespace.md)”。
 
 #### 在本地进行更改
 
