@@ -4,12 +4,12 @@
 
 此项目的这些版本当前受安全更新支持。
 
-| Version | Supported          |
-|---------|--------------------|
-| 1.0.0   | :white_check_mark: |
-| 0.2.0   | :white_check_mark: |
-| 0.1.1   | :white_check_mark: |
-| 0.1.0   | :x:                |
+| Version |     Supported      |
+|:-------:|:------------------:|
+|  1.0.0  | :white_check_mark: |
+|  0.2.0  | :white_check_mark: |
+|  0.1.1  | :white_check_mark: |
+|  0.1.0  |        :x:         |
 
 ## 报告漏洞
 
