@@ -1,15 +1,18 @@
 // ==UserScript==
+// @namespace      https://ewt.houtar.eu.org/examanswer2
+// @match          https://web.ewt360.com/mystudy/
+// @grant          none
 // @name           升学 E 网通 (EWT360) 试卷选择题自动完成 + 试题答案获取
 // @name:en        EWT Exam Auto Resolver & Answers Getter
-// @namespace      https://ewt.houtar.eu.org/examanswer2
-// @version        1.0.0
 // @description    此脚本在 EWT 试题中获取试题答案并自动完成选择题。
 // @description:en This script gets exam answers and automatically resolve single and multiple choice in EWT exam.
-// @author         Houtar
-// @match          https://web.ewt360.com/mystudy/
+// @copyright      2022, Houtar (https://github.com/houtarchat-cyber)
+// @license        GPL-3.0-or-later; https://www.gnu.org/licenses/gpl-3.0.txt
 // @icon           https://web.ewt360.com/favicon.ico
-// @grant          none
-// @license        GNU General Public License
+// @homepageURL    https://github.com/houtarchat-cyber/EWT-get-answer
+// @supportURL     https://github.com/houtarchat-cyber/EWT-get-answer/issues
+// @version        1.0.0
+// @author         Houtar
 // ==/UserScript==
 (() => {
   'use strict';
