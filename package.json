@@ -6,7 +6,7 @@
   "description": "此脚本在 EWT 试题中获取试题答案并自动完成选择题。",
   "devDependencies": {
     "@types/node": "^18.11.8",
-    "@typescript-eslint/eslint-plugin": "^5.42.0",
+    "@typescript-eslint/eslint-plugin": "^5.53.0",
     "eslint": "^8.26.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-node": "^11.1.0",
